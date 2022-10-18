@@ -1,0 +1,9 @@
+.nav-overlay{
+    text-align: right;
+    width: 100%;
+    height: 100%;
+    background-color: #12121277;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    box-shadow: 0 16px 26px -15px #7915E6AA;
+}
