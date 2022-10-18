@@ -10,11 +10,25 @@
 .foreground{
     z-index: 950;
 }
+
+.ml2 {
+    font-size: 15vw;
+}
+
+.ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+
+
 .hero{
     margin-top: 15vh;
+    font-family: 'Josefin Sans', sans-serif;
     margin-left: 5%;
     width: 100%;
     color: #FFFFFF;
+    font-size:2vw;
 }
 .hero h1{
     color: #7915E6;
