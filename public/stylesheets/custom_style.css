@@ -31,9 +31,24 @@
     font-size:2vw;
 }
 .hero h1{
-    color: #7915E6;
+    color: #7915E6DD;
     font-family: 'Audiowide', cursive;
     font-size: 15vw;
+}
+
+.btn{
+    position: fixed;
+    bottom: 5vw;
+    right: 5vw;
+    border-radius: 10vw;
+    background-color: #7915E600;
+    font-family: 'Audiowide', cursive;
+    font-size: 2vw;
+    height: 10vh;
+    width: 15vw;
+}
+.btn:hover{
+    background-color: #7915E6;
 }
 /*#particles-js canvas {*/
 /*    display: block;*/
