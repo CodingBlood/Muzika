@@ -36,7 +36,7 @@
     font-size: 15vw;
 }
 
-.btn{
+.btn2{
     position: fixed;
     bottom: 5vw;
     right: 5vw;
@@ -46,6 +46,28 @@
     font-size: 2vw;
     height: 10vh;
     width: 15vw;
+}
+.btn1{
+    position: fixed;
+    bottom: 5vh;
+    right: 40vw;
+    border-radius: 10vw;
+    background-color: #7915E600;
+    font-family: 'Audiowide', cursive;
+    font-size: 1.5vw;
+    height: 10vh;
+    width: 20vw;
+}
+.btn3{
+    position: fixed;
+    bottom: 17vh;
+    right: 37.5vw;
+    border-radius: 10vw;
+    background-color: #7915E600;
+    font-family: 'Audiowide', cursive;
+    font-size: 4vw;
+    height: 15vh;
+    width: 25vw;
 }
 .btn:hover{
     background-color: #7915E6;
