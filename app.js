@@ -20,14 +20,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use(session({
-      secret: 'QAXPLM!@#)(*123098',
-      resave: true,
-      saveUninitialized: true
+        secret: 'QAXPLM!@#)(*123098',
+        resave: true,
+        saveUninitialized: true
     }
 ));
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+
+
 // app.use(
 //     express.static(path.join(__dirname, "node_modules/bootstrap/dist/"))
 // );

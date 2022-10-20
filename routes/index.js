@@ -36,11 +36,14 @@ router.post('/login', async function(req, res, next) {
       const validPassword = await bcrypt.compare(pass,found.password);
       if(validPassword){
         req.session.user_id = found._id;
+        console.log("1");
         res.redirect('/profile');
       }else{
+        console.log("2");
         res.redirect('/login');
       }
     }else{
+      console.log("3");
       res.redirect('/login');
     }
   });
@@ -58,7 +61,7 @@ router.post('/signup', async function(req, res, next) {
   });
   MongoClient.connect(uri,function (err,db){
     if(err) throw err;
-    const dbo = db.db("ShopNShop");
+    const dbo = db.db("Muzika");
     dbo.collection("User").insertOne(user, function (err, res){
       if(err) throw err;
       console.log("Inserted Record");
