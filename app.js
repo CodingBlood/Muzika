@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var ejsMate = require('ejs-mate')
+var session = require('express-session');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
@@ -21,6 +22,12 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use(session({
+      secret: 'QAXPLM!@#)(*123098',
+      resave: true,
+      saveUninitialized: true
+    }
+));
 // app.use(
 //     express.static(path.join(__dirname, "node_modules/bootstrap/dist/"))
 // );
