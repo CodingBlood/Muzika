@@ -7,6 +7,15 @@
     padding-bottom: 0.5em;
     box-shadow: 0 16px 26px -15px #7915E6AA;
 }
+.overlay1{
+    margin-left: 20vw;
+    margin-bottom: 18vh;
+    position: fixed;
+    width: 60vw;
+    height: 60vh;
+    background-color: #121212C0;
+    box-shadow: 0 16px 26px -15px #7915E6AA;
+}
 .foreground{
     z-index: 950;
 }
@@ -64,25 +73,25 @@
 }
 .btn1{
     position: fixed;
-    bottom: 5vh;
-    right: 20vw;
-    border-radius: 4rem;
+    margin-top: 51vh;
+    margin-left: 17.5vw;
+    /*border-radius: 4rem;*/
     background-color: #7915E600;
     font-family: 'Audiowide', cursive;
-    font-size: 4vh;
-    height: 10vh;
-    width: 60vw;
+    font-size: 2vh;
+    height: 5vh;
+    width: 25vw;
 }
 .btn3{
     position: fixed;
-    bottom: 17vh;
-    right: 15vw;
-    border-radius: 6rem;
+    margin-top: 44vh;
+    margin-left: 10vw;
+    /*border-radius: 6rem;*/
     background-color: #7915E600;
     font-family: 'Audiowide', cursive;
-    font-size: 8vh;
-    height: 15vh;
-    width: 70vw;
+    font-size: 4vh;
+    height: 7vh;
+    width: 40vw;
 }
 .btn:hover{
     background-color: #7915E6;
@@ -90,15 +99,19 @@
 .username1{
     background-color: #7915E600;
     border-color: #7915E6;
-    border-radius: 1.5rem;
+    /*border-radius: 1.5rem;*/
     border-width: 0.1vw;
-    width: 80vw;
+    width: 50vw;
     height: 10vh;
     position: fixed;
-    margin-left: 10vw;
+    margin-left: 5vw;
     margin-top: 4vh;
-    font-size: 7vh;
+    font-size: 4vh;
     box-shadow: 0 16px 26px -15px #7915E6;
+}
+.username1:focus{
+    background-color: #7915E600;
+    color: #FFFFFFDD;
 }
 .username1::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #FFFFFFDD;
@@ -112,22 +125,27 @@
 .username1::-ms-input-placeholder { /* Microsoft Edge */
     color: #FFFFFFDD;
 }
+
 .password1{
     background-color: #7915E600;
     border-color: #7915E6;
     border-width: 0.1vw;
-    border-radius: 1.5rem;
+    /*border-radius: 1.5rem;*/
     box-shadow: 0 16px 26px -15px #7915E6;
-    width: 80vw;
+    width: 50vw;
     height: 10vh;
     position: fixed;
-    margin-left: 10vw;
+    margin-left: 5vw;
     margin-top: 17vh;
-    font-size: 7vh;
+    font-size: 4vh;
 }
 .password1::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #FFFFFFDD;
     opacity: 1; /* Firefox */
+}
+.password1:focus{
+    background-color: #7915E600;
+    color: #FFFFFFDD;
 }
 
 .password1:-ms-input-placeholder { /* Internet Explorer 10-11 */
