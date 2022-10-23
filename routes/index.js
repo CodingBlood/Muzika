@@ -102,3 +102,12 @@ module.exports = router;
 router.get('/luxury', function (req,res){
   res.render('luxury');
 });
+var musicPath = "http://172.17.0.1:4000/helloworld.mp3"; //change this path to your music file.
+var onclickHTML = "var audio = new Audio('" + musicPath + "'); audio.play();"
+var musicPath1 = "http://172.17.0.1:4000/helloworld1.mp3"; //change this path to your music file.
+var onclickHTML1 = "var audio = new Audio('" + musicPath1 + "'); audio.play();"
+var musicPath2 = "http://172.17.0.1:4000/helloworld2.mp3"; //change this path to your music file.
+var onclickHTML2 = "var audio = new Audio('" + musicPath2 + "'); audio.play();"
+router.get('/music', function (req, res) {
+  res.send('<button onclick="' + onclickHTML + '">click me to hear music</button><button onclick="' + onclickHTML1 + '">click me to hear music</button><button onclick="' + onclickHTML2 + '">click me to hear music</button>'); //this creates a button that the user can click to play some audio.
+});
