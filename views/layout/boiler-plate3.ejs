@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="stylesheet" href="stylesheets/custom_style.css">
+    <link rel="stylesheet" href="stylesheets/custom_style1.css">
     <script type="text/javascript" src="javascripts/style.js"></script>
     <script src="javascripts/particles.js"></script>
     <title>CodingBlood</title>
@@ -46,14 +46,21 @@
             </div>
         </div>
     </nav>
-    <%- body %>
+        <%- body %>
     </div>
 
     <div class="particle" id="particles-js">
     </div>
+
     <script>
         particlesJS.load('particles-js', 'images/particlesjs-config.json', function() {
             console.log('callback - particles.js config loaded');
+        });
+        const playButtons = document.querySelectorAll("button.play-button");
+        playButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                button.classList.toggle("play");
+            });
         });
     </script>
 

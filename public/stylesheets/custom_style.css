@@ -181,3 +181,69 @@
 .particle{
     z-index: 900;
 }
+
+controller {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+}
+.play-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 72px;
+    height: 72px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+.play-button::before,
+.play-button::after {
+    content: '';
+    position: absolute;
+    top: 36px;
+    width: 0;
+    height: 0;
+    transform: translateY(-50%);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-style: solid;
+    transition: all .2s linear;
+}
+.play-button::before {
+    right: 44px;
+    height: 72px;
+    border-width: 0 0 0 16px;
+}
+.play-button.play::before {
+    right: 36px;
+    height: 34px;
+    border-width: 14px 0 14px 28px;
+}
+.play-button::after {
+    left: 44px;
+    height: 72px;
+    border-width: 0 0 0 16px;
+}
+.play-button.play::after {
+    left: 36px;
+    height: 0;
+    border-width: 17px 0 17px 32px;
+}
+
+.youtube-link {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}

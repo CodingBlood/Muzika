@@ -1,0 +1,18 @@
+<% layout('./layout/boiler-plate3') %>
+
+    <div class="controller">
+        <button onclick=song() class="play-button play" type="button"></button>
+    </div>
+<script>
+    var audio = new Audio('http://172.17.0.1:4000/helloworld.mp3');
+    let a=0;
+    function song(){
+        if(a===1){
+            audio.pause();
+            a=0;
+        }else {
+            audio.play();
+            a=1;
+        }
+}
+</script>
