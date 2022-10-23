@@ -3,7 +3,11 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  if(!req.session.user_id){
+      res.render('index');
+  }else{
+    res.redirect('/profile');
+  }
 });
 
 // Basic Login Functionality===============================================================================================================
@@ -22,7 +26,11 @@ const requiredLogin = (req,res,next) => {
   }
 }
 router.get('/login', function(req, res, next) {
-  res.render('login');
+  if(!req.session.user_id){
+    res.render('login');
+  }else{
+    res.redirect('/profile');
+  }
 });
 router.post('/login', async function(req, res, next) {
   const username = req.body.uname;
@@ -49,7 +57,11 @@ router.post('/login', async function(req, res, next) {
   });
 });
 router.get('/signup', function(req, res, next) {
-  res.render('signup');
+  if(!req.session.user_id){
+    res.render('signup');
+  }else{
+    res.redirect('/profile');
+  }
 });
 router.post('/signup', async function(req, res, next) {
   const password = req.body.pass;
@@ -70,16 +82,23 @@ router.post('/signup', async function(req, res, next) {
   });
   res.redirect('/login');
 });
-router.post('/logout', function (req,res, next){
-  // req.session.user_id = null;
-  req.session.destroy();
-  res.redirect('/login');
+router.get('/logout', function (req,res, next){
+  if(!req.session.user_id){
+    res.render('login');
+  }else{
+    req.session.destroy();
+    res.redirect('/login');
+  }
 })
 router.get('/profile',requiredLogin,function (req,res,next){
-  // if(!req.session.user_id){
-  //   return res.redirect('/login');
-  // }else {
   res.render('profile');
   // }
 });
 module.exports = router;
+
+
+
+//======================================Defining luxury Section========================
+router.get('/luxury', function (req,res){
+  res.render('luxury');
+});

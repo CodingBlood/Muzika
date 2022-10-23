@@ -8,10 +8,10 @@
     box-shadow: 0 16px 26px -15px #7915E6AA;
 }
 .overlay1{
-    margin-left: 20vw;
+    margin-left: 30vw;
     margin-bottom: 18vh;
     position: fixed;
-    width: 60vw;
+    width: 40vw;
     height: 60vh;
     background-color: #121212C0;
     box-shadow: 0 16px 26px -15px #7915E6AA;
@@ -74,24 +74,25 @@
 .btn1{
     position: fixed;
     margin-top: 51vh;
-    margin-left: 17.5vw;
+    margin-left: 12vw;
     /*border-radius: 4rem;*/
     background-color: #7915E600;
     font-family: 'Audiowide', cursive;
-    font-size: 2vh;
+    font-size: 1vh;
     height: 5vh;
-    width: 25vw;
+    width: 16vw;
 }
+
 .btn3{
     position: fixed;
     margin-top: 44vh;
-    margin-left: 10vw;
+    margin-left: 7vw;
     /*border-radius: 6rem;*/
     background-color: #7915E600;
     font-family: 'Audiowide', cursive;
-    font-size: 4vh;
+    font-size: 2.5vh;
     height: 7vh;
-    width: 40vw;
+    width: 26vw;
 }
 .btn:hover{
     background-color: #7915E6;
@@ -101,12 +102,13 @@
     border-color: #7915E6;
     /*border-radius: 1.5rem;*/
     border-width: 0.1vw;
-    width: 50vw;
+    width: 33vw;
     height: 10vh;
     position: fixed;
-    margin-left: 5vw;
+    margin-left: 3.5vw;
+    color: #FFFFFF;
     margin-top: 4vh;
-    font-size: 4vh;
+    font-size: 2.5vw;
     box-shadow: 0 16px 26px -15px #7915E6;
 }
 .username1:focus{
@@ -130,14 +132,15 @@
     background-color: #7915E600;
     border-color: #7915E6;
     border-width: 0.1vw;
+    color: #FFFFFF;
     /*border-radius: 1.5rem;*/
     box-shadow: 0 16px 26px -15px #7915E6;
-    width: 50vw;
+    width: 33vw;
     height: 10vh;
     position: fixed;
-    margin-left: 5vw;
+    margin-left: 3.5vw;
     margin-top: 17vh;
-    font-size: 4vh;
+    font-size: 2.5vw;
 }
 .password1::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #FFFFFFDD;
