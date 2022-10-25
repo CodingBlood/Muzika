@@ -1,10 +1,17 @@
 <% layout('./layout/boiler-plate3') %>
 
-    <div class="controller">
-        <button onclick=song() class="play-button play" type="button"></button>
-    </div>
+<div class="controller">
+    <button onclick=song2() class="play-button3 play3" type="button"></button>
+    <button onclick=song2() class="play-button2 play2" type="button"></button>
+    <button onclick=song() class="play-button play" type="button"></button>
+    <button onclick=song1() class="play-button1 play1" type="button"></button>
+    <button onclick=song1() class="play-button4 play4" type="button"></button>
+</div>
+<!--<div class="controller1">-->
+<!--    -->
+<!--</div>-->
 <script>
-    var audio = new Audio('http://172.17.0.1:4000/helloworld.mp3');
+    var audio = new Audio('http://3373-103-161-223-10.ngrok.io/helloworld.mp3');
     let a=0;
     function song(){
         if(a===1){
@@ -14,5 +21,12 @@
             audio.play();
             a=1;
         }
-}
+    }
+    function song1(){
+        audio.playbackRate=audio.playbackRate*1.1;
+    }
+    function song2(){
+        audio.playbackRate=audio.playbackRate*0.9;
+
+    }
 </script>

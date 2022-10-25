@@ -21,7 +21,7 @@
     z-index: 900;
 }
 
-controller {
+.controller {
     position: absolute;
     z-index: 10;
     left: 0;
@@ -33,7 +33,7 @@ controller {
 .play-button {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 75%;
     transform: translate(-50%, -50%);
     width: 72px;
     height: 72px;
@@ -86,3 +86,228 @@ controller {
     text-decoration: none;
     font-size: 12px;
 }
+
+.play-button1 {
+    position: absolute;
+    left: 70%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    width: 72px;
+    height: 72px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+.play-button1::before,
+.play-button1::after {
+    content: '';
+    position: absolute;
+    top: 36px;
+    width: 0;
+    height: 0;
+    transform: translateY(-50%);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-style: solid;
+    transition: all .2s linear;
+}
+.play-button1::after {
+    content: '';
+    position: absolute;
+    top: 36px;
+    width: 0;
+    height: 0;
+    transform: translateY(-50%);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-style: solid;
+    transition: all .2s linear;
+}
+.play-button1::before {
+    right: 44px;
+    height: 72px;
+    border-width: 0 0 0 16px;
+}
+.play-button1.play1::before {
+    right: 36px;
+    height: 36px;
+    border-width: 14px 0 14px 28px;
+}
+.play-button1::after {
+    left: 44px;
+    height: 72px;
+    border-width: 0 0 0 16px;
+}
+.play-button1.play1::after {
+    left: 36px;
+    height: 0;
+    border-width: 17px 0 17px 32px;
+}
+
+
+
+
+.play-button2 {
+    position: absolute;
+    left: 25%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    width: 72px;
+    height: 72px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+.play-button2::before,
+.play-button2::after {
+    content: '';
+    position: absolute;
+    top: 36px;
+    width: 0;
+    height: 0;
+    transform: translateY(-50%);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-style: solid;
+    transition: all .2s linear;
+}
+.play-button2::before {
+    right: 44px;
+    height: 72px;
+    border-width: 0 0 0 16px;
+}
+.play-button2.play2::before {
+    left: 15px;
+    height: 0;
+    border-width: 17px 32px 17px 0;
+}
+.play-button2::after {
+    left: 44px;
+    height: 72px;
+    border-width: 0 0 0 16px;
+}
+.play-button2.play2::after {
+    right: 36px;
+    height: 36px;
+    border-width: 14px 28px 14px 0;
+}
+
+
+
+
+
+.play-button3 {
+    position: absolute;
+    left: 10%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    width: 72px;
+    height: 72px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+.play-button3::before{
+    content: '';
+    position: absolute;
+    top: 36px;
+    width: 0;
+    height: 0;
+    transform: translateY(-50%);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-style: solid;
+    transition: all .2s linear;
+}
+.play-button3.play3::before {
+    left: 15px;
+    height: 0;
+    border-width: 25px 50px 25px 0;
+}
+
+.play-button3::after {
+    content: '';
+    position: absolute;
+    top: 36px;
+    width: 0;
+    height: 0;
+    transform: translateY(-50%);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-style: solid;
+    transition: all .2s linear;
+}
+.play-button3.play3::after {
+    left: 15px;
+    height: 72px;
+    border-width: 0 0 0 7px;
+}
+
+
+
+
+.play-button4 {
+    position: absolute;
+    left: 85%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    width: 72px;
+    height: 72px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+.play-button4::before,
+.play-button4::after {
+    content: '';
+    position: absolute;
+    top: 36px;
+    width: 0;
+    height: 0;
+    transform: translateY(-50%);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-style: solid;
+    transition: all .2s linear;
+}
+.play-button4::before {
+    right: 44px;
+    height: 72px;
+    border-width: 0 0 0 16px;
+}
+.play-button4.play4::before {
+    left: 36px;
+    height: 0;
+    border-width: 25px 0 25px 50px;
+}
+.play-button4::after {
+    left: 80px;
+    height: 72px;
+    border-width: 0 0 0 7px;
+}
+.play-button4.play4::after {
+    right: 15px;
+    height: 72px;
+    border-width: 0 0 0 7px;
+}
+
+
+
+
+
