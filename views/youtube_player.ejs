@@ -1,0 +1,41 @@
+<% layout('./layout/boiler-plate3') %>
+<div class="controller">
+    <div class="overlay-player">
+        <div class="hero1 container">
+            <div class="hero-text">
+                <h1 class="heading">Muzika</h1>
+            </div>
+        </div>
+
+        <form method="POST" action="/search">
+            <input name="song" type="text" class="song form-control" id="song exampleFormControlInput1" placeholder="Enter name of a song...">
+            <input type="submit" class="btn btn4 btn-primary btn-lg">
+        </form>
+
+        <h1 class="song_name">some laura ipsum is here</h1>
+        <button data-video="SzVysZwHWPU" onclick=song() data-autoplay="0" class="play-button play" data-loop="1" id="youtube-audio"></button>
+    </div>
+</div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<!--<script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>-->
+<script>
+    var audio = new Audio('http://3373-103-161-223-10.ngrok.io/helloworld.mp3');
+    let a=0;
+    function song(){
+        if(a===1){
+            audio.pause();
+            a=0;
+        }else {
+            audio.play();
+            a=1;
+        }
+    }
+    function song1(){
+        audio.playbackRate=audio.playbackRate*1.1;
+    }
+    function song2(){
+        audio.playbackRate=audio.playbackRate*0.9;
+
+    }
+</script>

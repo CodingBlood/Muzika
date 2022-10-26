@@ -162,6 +162,24 @@
     height: 7vh;
     width: 26vw;
 }
+.song_name{
+    color: #FFFFFF;
+    font-family: 'Audiowide', cursive;
+    font-size: 2rem;
+    position: absolute;
+    margin: 20% 25% 30%;
+}
+.btn4{
+    position: fixed;
+    margin-top: 5.5%;
+    margin-left: 50%;
+    /*border-radius: 6rem;*/
+    background-color: #7915E600;
+    font-family: 'Audiowide', cursive;
+    font-size: 2.5vh;
+    height: 7vh;
+    width: 26vw;
+}
 .btn:hover{
     background-color: #7915E6;
 }
@@ -195,6 +213,38 @@
 .username1::-ms-input-placeholder { /* Microsoft Edge */
     color: #FFFFFFDD;
 }
+
+.song{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 10%;
+    background-color: #7915E600;
+    border-color: #7915E6;
+    /*border-radius: 1.5rem;*/
+    border-width: 0.1vw;
+    width: 33vw;
+    height: 10vh;
+    color: #FFFFFF;
+    font-size: 2.5vw;
+    box-shadow: 0 16px 26px -15px #7915E6;
+}
+.song:focus{
+    background-color: #7915E600;
+    color: #FFFFFFDD;
+}
+.song::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #FFFFFFDD;
+    opacity: 1; /* Firefox */
+}
+
+.song:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #FFFFFFDD;
+}
+
+.username1::-ms-input-placeholder { /* Microsoft Edge */
+    color: #FFFFFFDD;
+}
+
 
 .password1{
     background-color: #7915E600;

@@ -111,3 +111,9 @@ var onclickHTML2 = "var audio = new Audio('" + musicPath2 + "'); audio.play();"
 router.get('/music', function (req, res) {
   res.send('<button onclick="' + onclickHTML + '">click me to hear music</button><button onclick="' + onclickHTML1 + '">click me to hear music</button><button onclick="' + onclickHTML2 + '">click me to hear music</button>'); //this creates a button that the user can click to play some audio.
 });
+router.get('/player', function (req, res) {
+  res.render('player');
+});
+router.get('/youtube_player', function (req, res) {
+  res.render('youtube_player');
+});
